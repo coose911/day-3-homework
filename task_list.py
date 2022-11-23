@@ -48,3 +48,28 @@ def given_description(a):
             print(task)
 given_description("Walk Dog")
 
+
+print(" ")
+#6
+def mark_completed(a):
+    for task in tasks:
+        if a == task["description"]:
+            task["compeleted"] = True
+            del(task["completed"])
+
+mark_completed("Feed Cat")
+print(tasks)
+
+print(" ")
+
+#7
+# def adding_new_task(new_task):
+#     for task in tasks:
+#         task["description"] = new_task
+#         print(task)
+    
+
+# adding_new_task("gym")
+# Add a task to the list
+
+
